@@ -1,0 +1,117 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8ab1eb 0%, #b66af5 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 700;
+}
+
+.field {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+input:not([type="checkbox"]) {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #a513e3;
+  box-shadow: 0 0 0 2px rgba(165, 19, 227, 0.1);
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 11px;
+  margin: 4px 0 0 0;
+  min-height: 15px;
+  font-weight: 500;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #c3e6cb;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+button.primary {
+  width: 100%;
+  padding: 14px;
+  background-color: #a513e3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+button.primary:hover {
+  background-color: #be6de1;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(165, 19, 227, 0.3);
+}
+
+button.primary:active {
+  transform: translateY(0);
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #a513e3;
+}
